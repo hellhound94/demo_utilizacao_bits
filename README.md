@@ -1,4 +1,4 @@
-/*
+
 * Autor: Abner Cordeiro - 30/03/2022
 *   abnercordeiro@outlook.com
 * 
@@ -10,4 +10,4 @@
 *	  1ª -> com operadores bit a bit.
 *	  2ª -> com campos de bits.
 * 
-*/
+

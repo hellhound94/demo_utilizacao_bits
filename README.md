@@ -8,6 +8,6 @@
 * 
 * Manipulando bits de duas formas.
 *	  1ª -> com operadores bit a bit.
-*   2ª -> com campos de bits
+*	  2ª -> com campos de bits.
 * 
 */

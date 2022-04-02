@@ -6,8 +6,8 @@
 * São exatamente 20:59 estou o dia inteiro sem internet
 * então estou brincando com isso, espero que seja útil para alguém, algum dia, por algum motivo....
 * 
-* Manipulando bits de duas formas.
-*	  1ª -> com operadores bit a bit.
-*	  2ª -> com campos de bits.
-* 
+* Manipulando bits de duas formas:
+    1ª -> com operadores bit a bit.
+    2ª -> com campos de bits.
+
 

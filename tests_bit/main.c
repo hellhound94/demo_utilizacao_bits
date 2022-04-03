@@ -7,14 +7,14 @@
 * 
 * Manipulando bits de duas formas.
 *	1ª -> com operadores bit a bit.
-*   2ª -> com campos de bits
+*	2ª -> com campos de bits.
 * 
 */
 
 #include <stdio.h>
 
 /*********************************************************************************************************************/
-/* Tudo está em bit e não hexadecimal para facilitar a visualização													 */		
+/* Tudo está em bit e não hexadecimal para facilitar a visualização							*/		
 #define B7 0b10000000
 #define B6 0b01000000
 #define B5 0b00100000
@@ -160,7 +160,7 @@ void campos_de_bits()
 }
 
 /*********************************************************************************************************************/
-/* INICIO....do pesadelo!																							 */
+/* INICIO....do pesadelo!																	*/
 int main()
 {
 	while (1) {

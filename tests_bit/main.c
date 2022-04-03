@@ -107,16 +107,17 @@ void struct_to_byte(GPIO_FAKE gpIO, unsigned char *pucByte)
 	(gpIO.ucPIN7) ? set_bit(pucByte, B7) : zero_bit(pucByte, B7);
 }
 
+/* Não sei se essa é a melhor forma, mas aparentemente está funcionando... */
 void byte_to_struct(unsigned char ucByte, PGPIO_FAKE pgpIO)
 {
-	pgpIO->ucPIN0 = (ucByte & B0) ? 1 : 0;
-	pgpIO->ucPIN1 = (ucByte & B1) ? 1 : 0;
-	pgpIO->ucPIN2 = (ucByte & B2) ? 1 : 0;
-	pgpIO->ucPIN3 = (ucByte & B3) ? 1 : 0;
-	pgpIO->ucPIN4 = (ucByte & B4) ? 1 : 0;
-	pgpIO->ucPIN5 = (ucByte & B5) ? 1 : 0;
-	pgpIO->ucPIN6 = (ucByte & B6) ? 1 : 0;
-	pgpIO->ucPIN7 = (ucByte & B7) ? 1 : 0;
+	pgpIO->ucPIN0 = ((ucByte & B0) == B0) ? 1 : 0;
+	pgpIO->ucPIN1 = ((ucByte & B1) == B1) ? 1 : 0;
+	pgpIO->ucPIN2 = ((ucByte & B2) == B2) ? 1 : 0;
+	pgpIO->ucPIN3 = ((ucByte & B3) == B3) ? 1 : 0;
+	pgpIO->ucPIN4 = ((ucByte & B4) == B4) ? 1 : 0;
+	pgpIO->ucPIN5 = ((ucByte & B5) == B5) ? 1 : 0;
+	pgpIO->ucPIN6 = ((ucByte & B6) == B6) ? 1 : 0;
+	pgpIO->ucPIN7 = ((ucByte & B7) == B7) ? 1 : 0;
 }
 
 void campos_de_bits()
